@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Seismic</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="css/media/seismic black logo.png" alt="">
+    </div>
+
+    <hr/>
+
+    <div class="navbar">
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+
+            <div class="navbar_item">
+                <a>About Seismic: The Hijabi Edition</a>
+            </div>
+
+            <div class="navbar_item" style="border-left: 2px solid; border-right: 2px solid">
+                <a>Contact Us</a>
+            </div>
+
+            <div class="navbar_item">
+                <a>View Posters</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr/>
+
+
+    <div class="magazine_preview">
+        <div class="magazine_cover_section">
+            <h3>JULY ISSUE</h3>
+            <div class="magazine_cover"></div>
+        </div>
+        <div class="buttons_section">
+            <a>View Full Magazine</a>
+            <a>View Articles</a>
+            <a>View Photography</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

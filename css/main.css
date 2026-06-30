@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'SA Cinta';
+    src: url('fonts/cinta.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/InterVariable.ttf') format('truetype');
+}
+
+body {
+    margin: 0px;
+}
+
+.banner {
+    width: 100vw;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img{
+    width: 300px;
+    
+}
+
+
+/* Navabar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .navbar_item {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar a {
+    font-family: "Inter", sans-serif;
+    font-size: 15pt;
+    font-weight: 300; /* Light */
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+/* Magazine Preview Section */
+
+.magazine_preview {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.magazine_preview .magazine_cover_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.magazine_preview .magazine_cover_section h3 {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800
+}
+
+.magazine_preview .magazine_cover {
+    height: 500px;
+    width: 300px;
+    background-color: gray;
+    margin: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.magazine_preview .buttons_section {
+    width: 500px;
+    height: 700px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.magazine_preview .buttons_section a {
+    font-family: "SA Cinta", serif;
+    font-size: 18pt;
+    text-align: justify;
+    line-height: 2;
+    padding: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .navbar_item {
+        width: 100%;
+        border: none !important;
+    }
+
+    .magazine_preview {
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .magazine_preview .buttons_section {
+        width: 90%;
+        height: auto;
+        align-items: center;
+    }
+
+    .magazine_preview .magazine_cover {
+        width: 80vw;
+        height: auto;
+        aspect-ratio: 3/5;
+    }
+}
+
