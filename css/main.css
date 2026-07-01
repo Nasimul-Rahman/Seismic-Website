@@ -77,13 +77,18 @@ body {
 
 .magazine_preview .magazine_cover {
     height: 500px;
-    width: 300px;
+    width: 350px;
     background-color: gray;
     margin: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url('media/SEISMIC\ MAGAZINE\ COVER.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -105,6 +110,7 @@ body {
     text-align: justify;
     line-height: 2;
     padding: 20px;
+    color: black;
 }
 
 .hamburger {
@@ -156,9 +162,8 @@ body {
     }
 
     .magazine_preview .magazine_cover {
-        width: 80vw;
-        height: auto;
-        aspect-ratio: 3/5;
+        height: 500px;
+        width: 350px;
     }
 }
 
