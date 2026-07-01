@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Seismic</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="css/media/seismic black logo.png" alt="">
+    </div>
+
+    <hr/>
+
+    <div class="navbar">
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+
+            <div class="navbar_item">
+                <a>About Seismic: The Hijabi Edition</a>
+            </div>
+
+            <div class="navbar_item" style="border-left: 2px solid; border-right: 2px solid">
+                <a>Contact Us</a>
+            </div>
+
+            <div class="navbar_item">
+                <a>View Posters</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr/>
+
+
+    <section class="articles">
+    <h2>ARTICLES</h2>
+
+    <div class="card-container">
+        <article class="card">
+            <img src="https://picsum.photos/400/250?random=2" alt="Article Image">
+            <div class="card-content">
+                <h3>Haifa</h3>
+                <a href="css/media/HAIFA ARTICLE.pdf">Read Article →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://picsum.photos/400/250?random=2" alt="Article Image">
+            <div class="card-content">
+                <h3>Humayra</h3>
+                <a href="css/media/HUMAYRA ARTICLE.pdf">Read Article →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://picsum.photos/400/250?random=3" alt="Article Image">
+            <div class="card-content">
+                <h3>Arisha</h3>
+                <a href="css/media/ARISHA ARTICLE.pdf">Read Article →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://picsum.photos/400/250?random=3" alt="Article Image">
+            <div class="card-content">
+                <h3>Niyaf</h3>
+                <a href="css/media/NIYAF ARTICLE.pdf">Read Article →</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
